@@ -1,7 +1,7 @@
 describe('test suite', () => {
     it('test case', () => {
         cy.visit('https://www.saucedemo.com/')     // Accede a la dirección del sitio indicado.
-        cy.get('#user-name').should('exist')       // Usa em metodo should, con el argumento exist, verifica que el elemento exista en el DOM 
+        cy.get('.login_logo').should('have.text', 'Swag Labs')    // Usa em metodo should, con el argumento have, verifica si su texto corresponde al indicado por parametro
         cy.wait(5000)
     })
 })
